@@ -1,0 +1,33 @@
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-right: 1px solid whitesmoke;
+}
+
+.sideBar header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sideBar header .chrctImg{
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    height: 25vh;
+    width: 25vh;
+
+}
+
+.sideBar .dataSection{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sideBar .dataSection .chrctSecondary{
+    border: 1px solid whitesmoke;
+    background: rgb(206, 202, 202);
+    border-radius: 50%;
+    height: 27h;
+    width: 7vh;
+}
