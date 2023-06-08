@@ -3,7 +3,50 @@ import ReactDOM from 'react-dom/client'
 import { CharacterIcon } from './characterIcon'
 import {CharacterAttr} from './characterAttr'
 import './sideBar.css'
+const generateAttrBar = ()=>{
+
+
+    const results = [];
+    for (const attr  of dataAttr) {
+        results.push(
+            
+        );
+      }
+      return <>{results}</>;
+
+}
 export const SideBar = ()=>{
+    const dataAttr = [
+        
+        {
+            text:"Fuerza",
+            value:"7",
+        },
+        {
+            text:"Destreza",
+            value:"7",
+        },
+        {
+            text:"Cosntitucion",
+            value:"7",
+        },
+        {
+            text:"Voluntad",
+            value:7,
+        },
+        {
+            text:"Carisma",
+            value:7,
+        },
+        {
+            text:"Percepcion",
+            value:"7",
+        },
+        {
+            text:"Habilidad",
+            value:"7",
+        }    ];
+  
     return (
         <>
         <aside className='sideBar'>
@@ -15,16 +58,9 @@ export const SideBar = ()=>{
                 <CharacterIcon imageSource="/compass.svg" className="chrctSecondary" />
                 <CharacterIcon imageSource="/karate.svg" className="chrctSecondary" />
             </section>
-            <section className='attrSection'>
-                <CharacterAttr className="atributes" atributeName="Fuerza" AtributeValue="7" />
-                <CharacterAttr className="atributes" atributeName="Destreza" AtributeValue="7" />
-                <CharacterAttr className="atributes" atributeName="Constitución" AtributeValue="7" />
-                <CharacterAttr className="atributes" atributeName="Voluntad" AtributeValue="7" />
-                <CharacterAttr className="atributes" atributeName="Inteligencia" AtributeValue="7" />
-                <CharacterAttr className="atributes" atributeName="Carisma" AtributeValue="7" />
-                <CharacterAttr className="atributes" atributeName="Habilidad" AtributeValue="7" />
-                <CharacterAttr className="atributes" atributeName="Percepción" AtributeValue="7" />
-
+            <section className='attrSection'> 
+            <CharacterAttr className="atributes" data={dataAttr} />
+               
             </section>
            
             
