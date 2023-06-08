@@ -11,7 +11,7 @@ export const CharacterAttr = ({ className, data}) =>{
                     {smallAtribute}
                 </h2>
             <div>
-                <h1 atribute={datum.text}>
+                <h1 atribute={datum.text} key={datum.text}>
                     {datum.value}
                 </h1>
             </div>
