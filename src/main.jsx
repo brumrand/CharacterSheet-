@@ -8,5 +8,9 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
 <>
 <SideBar />
+<main>
+<p>"HOla"</p>
+</main>
 </>
+
 )

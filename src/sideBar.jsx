@@ -3,18 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { CharacterIcon } from './characterIcon'
 import {CharacterAttr} from './characterAttr'
 import './sideBar.css'
-const generateAttrBar = ()=>{
 
-
-    const results = [];
-    for (const attr  of dataAttr) {
-        results.push(
-            
-        );
-      }
-      return <>{results}</>;
-
-}
 export const SideBar = ()=>{
     const dataAttr = [
         

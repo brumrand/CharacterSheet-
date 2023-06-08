@@ -1,4 +1,8 @@
 body{
     margin: 0;
     background: #222;
+
+}
+.root{
+    display: flex;
 }
