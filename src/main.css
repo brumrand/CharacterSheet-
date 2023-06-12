@@ -1,9 +1,13 @@
+main{
+    width: 80vw;
+}
 body{
     margin: 0;
     background: #222;
 
 }
-#root{
+#sheet{
+    width: 100vw;
     display: flex;
     flex-direction: row;
 }
