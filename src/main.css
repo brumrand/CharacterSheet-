@@ -11,3 +11,65 @@ body{
     display: flex;
     flex-direction: row;
 }
+main header{
+    display: flex;
+    flex-direction: row;
+    width:80vw ;
+    height: 21vh;
+    color: whitesmoke;
+}
+main header .externalVariablesHedaerContainers{
+    width:40vw ;
+    height: 21vh;
+   
+}
+main header .externalVariablesHedaerContainers .variableDataHeader{
+    display: grid;
+    grid-template-columns: 5vw 20vw 2vw 5vw 1vw 5vw 2vw;
+    grid-template-rows: 10vh 10vh;
+}
+main header .externalVariablesHedaerContainers .variableDataHeader .textClass{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    
+}
+main header .externalVariablesHedaerContainers .variableDataHeader .headerProgress{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+}
+main header .externalVariablesHedaerContainers .variableDataHeader .headerLabelMax{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    
+}
+
+main header .externalVariablesHedaerContainers .variableDataHeader .headerLabelCur{
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    
+}
+
+main header .externalVariablesHedaerContainers .variableDataHeader .headerInputMax{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+}
+
+main header .externalVariablesHedaerContainers .variableDataHeader .headerInputCur{
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+}
