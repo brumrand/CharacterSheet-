@@ -28,17 +28,19 @@ export const MainStrucutre = () =>{
             </div>
 
         </section>
-        <section className='externalVariablesHedaerContainers'>
-            
-                <InputWithLabel labelClasss={"headerHakisLabel"} inputClass={"headerHakisInput"} labelText={"Armadura"} inputValue={5} />
-            
-            
-                <InputWithLabel labelClasss={"headerHakisLabel"} inputClass={"headerHakisInput"} labelText={"Observación"} inputValue={5} />
-            
-            
-                <InputWithLabel labelClasss={"headerHakisLabel"} inputClass={"headerHakisInput"} labelText={"Conquistador"} inputValue={5} />
-            
-
+        <section className='externalSatitcVariablesHedaerContainers'>
+            <div className="staticData">
+            <InputWithLabel labelClasss={"headerHakisLabel"} inputClass={"headerHakisInput"} labelText={"Armadura"} inputValue={5} />
+            </div>
+               
+            <div className="staticData">
+            <InputWithLabel labelClasss={"headerHakisLabel"} inputClass={"headerHakisInput"} labelText={"Observación"} inputValue={5} />
+            </div>
+                
+            <div className="staticData">
+            <InputWithLabel labelClasss={"headerHakisLabel"} inputClass={"headerHakisInput"} labelText={"Conquistador"} inputValue={5} />
+            </div>
+               
         </section>
 
     </header>

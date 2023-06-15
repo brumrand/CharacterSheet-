@@ -23,16 +23,26 @@ main header .externalVariablesHedaerContainers{
     height: 21vh;
    
 }
+main header .externalSatitcVariablesHedaerContainers{
+    width:40vw ;
+    height: 21vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
 main header .externalVariablesHedaerContainers .variableDataHeader{
     display: grid;
     grid-template-columns: 5vw 20vw 2vw 5vw 1vw 5vw 2vw;
-    grid-template-rows: 10vh 10vh;
+    grid-template-rows: 5vh 5vh;
 }
 main header .externalVariablesHedaerContainers .variableDataHeader .textClass{
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    margin: 0;
+    text-align: center;
     
 }
 main header .externalVariablesHedaerContainers .variableDataHeader .headerProgress{
@@ -40,6 +50,9 @@ main header .externalVariablesHedaerContainers .variableDataHeader .headerProgre
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
+    accent-color: rgb(77, 204, 77);
+    height: 20px;
+
     
 }
 main header .externalVariablesHedaerContainers .variableDataHeader .headerLabelMax{
@@ -47,6 +60,8 @@ main header .externalVariablesHedaerContainers .variableDataHeader .headerLabelM
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
+    text-align: center;
+    padding: 2vh;
     
 }
 
@@ -55,6 +70,8 @@ main header .externalVariablesHedaerContainers .variableDataHeader .headerLabelC
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 1;
+    text-align: center;
+    padding: 2vh;
     
 }
 
@@ -63,6 +80,12 @@ main header .externalVariablesHedaerContainers .variableDataHeader .headerInputM
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 2;
+   appearance:textfield;
+   border: none;
+   border-radius: 50px;
+   width: 5vh;
+   text-align: center;
+   margin-left: 1vw;
     
 }
 
@@ -71,5 +94,32 @@ main header .externalVariablesHedaerContainers .variableDataHeader .headerInputC
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 2;
+    appearance:textfield;
+    border-radius: 50px;
+    border: none;
+    border-radius: 50px;
+    width: 5vh;
+    text-align: center;
+    margin-left: 1vw;
     
+}
+
+main header .externalSatitcVariablesHedaerContainers .staticData{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+main header .externalSatitcVariablesHedaerContainers .staticData input {
+    appearance:textfield;
+    border: none;
+    border-radius: 50px;
+    width: 5vh;
+    text-align: center;
+}
+
+main header .externalSatitcVariablesHedaerContainers .staticData label {
+font-size: x-large;
 }
