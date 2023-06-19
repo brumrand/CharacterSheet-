@@ -17,6 +17,7 @@ main header{
     width:80vw ;
     height: 21vh;
     color: whitesmoke;
+    border-bottom: solid 1px whitesmoke;
 }
 main header .externalVariablesHedaerContainers{
     width:40vw ;
@@ -122,4 +123,50 @@ main header .externalSatitcVariablesHedaerContainers .staticData input {
 
 main header .externalSatitcVariablesHedaerContainers .staticData label {
 font-size: x-large;
+}
+section .searchBar{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+}
+.select{
+    height: 3vh;
+    margin-left: 1vw;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5%;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.search{
+    height: 3vh;
+    margin-right: 1vw;
+    background-color: whitesmoke;
+    border:none;
+    border-radius: 5%;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.throwsConatiner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.throws{
+    width: 75%;
+}
+.throwsData{
+    width: 25%;
+    height: 76vh;
+    border: 1px solid whitesmoke;
+    position: sticky;
+    top: 1vh;
 }
