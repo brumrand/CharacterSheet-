@@ -1,4 +1,4 @@
-const searchBar = ({})=>{
+export const SearchBarTag = ()=>{
     return (
         <div className="searchBar">
             <select name="select" className="select">

@@ -108,21 +108,34 @@ main header .externalVariablesHedaerContainers .variableDataHeader .headerInputC
 main header .externalSatitcVariablesHedaerContainers .staticData{
     width: 100%;
     height: 7vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns:  50% 50%;
+    grid-template-rows: 7vh ;
+    
+
 
 }
 main header .externalSatitcVariablesHedaerContainers .staticData input {
+    justify-self: center;
+    align-self: center;
     appearance:textfield;
     border: none;
     border-radius: 50px;
     width: 5vh;
+    height: 5vh;
     text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 main header .externalSatitcVariablesHedaerContainers .staticData label {
 font-size: x-large;
+grid-column-start: 1;
+grid-column-end: 1;
+grid-row-start: 1;
+grid-row-end: 1;
 }
 section .searchBar{
     width: 100%;
@@ -160,8 +173,11 @@ section .searchBar{
     
 
 }
+.equipment{
+    width: 40%;
+}
 .throws{
-    width: 75%;
+    width: 35%;
 }
 .throwsData{
     width: 25%;
@@ -170,3 +186,47 @@ section .searchBar{
     position: sticky;
     top: 1vh;
 }
+.equipment .itemCoantainer{
+    width: 100%;
+    display: grid;
+    border-bottom:  2px solid whitesmoke;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 5vh 15vh;
+}
+
+.equipment .itemCoantainer .itemsImage{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 90%;
+   
+
+}
+.equipment .itemCoantainer h3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.equipment .itemCoantainer .itemData1{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    color: whitesmoke;
+
+}
+
+.equipment .itemCoantainer .itemData2{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    color: whitesmoke;
+}
+
