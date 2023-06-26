@@ -1,5 +1,6 @@
 import {MainHeaderStructure} from "./headerMainCharacterSheet";
 import{ItemSection} from "./itemsSections"
+import{ThrowSection} from "./throws"
 import {SearchBarTag} from "./searchbar";
 const items = [
 {
@@ -31,6 +32,33 @@ const items = [
 }
 ]
 
+const throws = [
+    {
+        name : "atletismo",
+        attr : "constitucion",
+        haki : true,
+        modf : 10,
+        cost: 0,
+        tecn: false
+    },
+    {
+        name : "bloqueo",
+        attr : "destreza",
+        haki : true,
+        modf : 10,
+        cost: 0,
+        tecn: false
+    },
+    {
+        name : "pelea",
+        attr : "fuerza",
+        haki : true,
+        modf : 10,
+        cost: 0,
+        tecn: false
+    }
+]
+
 export const MainStrucutre = () =>{
     return (
         <main>
@@ -42,7 +70,7 @@ export const MainStrucutre = () =>{
                 <ItemSection data={items}  ></ItemSection>
             </section>
             <section className="throws">
-
+            <ThrowSection data={throws}></ThrowSection>
             </section>
             <section className="throwsData">
 

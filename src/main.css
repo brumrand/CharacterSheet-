@@ -111,7 +111,7 @@ main header .externalSatitcVariablesHedaerContainers .staticData{
     display: grid;
     grid-template-columns:  50% 50%;
     grid-template-rows: 7vh ;
-    
+    align-items: center;
 
 
 }
@@ -189,7 +189,6 @@ section .searchBar{
 .equipment .itemCoantainer{
     width: 100%;
     display: grid;
-    border-bottom:  2px solid whitesmoke;
     grid-template-columns: 30% 35% 35%;
     grid-template-rows: 5vh 15vh;
 }
@@ -230,3 +229,54 @@ section .searchBar{
     color: whitesmoke;
 }
 
+.throws .throwsContainer{
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 5vh 5vh;
+}
+.throws .throwsContainer img{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 9vh;
+}
+.throws .throwsContainer .throwName{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    color: whitesmoke;
+    font-size: x-large;
+
+}
+.throws .throwsContainer .throwCost{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+    color: whitesmoke;
+}
+.throwsContainer:hover, .itemCoantainer:hover{
+   background: #122;
+}
+.throws .throwsContainer .throwLvl{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+    color: whitesmoke;
+}
+.throws .throwsContainer .throwLvl{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    color: whitesmoke;
+}
