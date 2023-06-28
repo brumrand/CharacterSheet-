@@ -280,3 +280,7 @@ section .searchBar{
     text-align: center;
     color: whitesmoke;
 }
+
+.selectedImg{
+    background: #4ec1ac36;
+}

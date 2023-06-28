@@ -1,3 +1,4 @@
+import {useState} from "react"
 export const ItemSection = ({data}) =>{
     const results = [];
 
@@ -13,10 +14,16 @@ export const ItemSection = ({data}) =>{
             default:
                 route = "/item.svg"
           }
-          
+          let  [isclick, setIsClick]  = useState(false);
+          let  handleClick =() =>{
+            setIsClick(!isclick)
+          }
+          let  imageClasess = "itemsImage"
+          isclick === false ?  imageClasess = "itemsImage" :  imageClasess = "itemsImage selectedImg"
         results.push(
-        <div className="itemCoantainer">
-            <img src={route} className="itemsImage" />
+            
+        <div className="itemCoantainer" onClick={handleClick}>
+            <img src={route} className={imageClasess} />
             <h3>{datum.name}</h3>
             <div className="itemData1">
                 <h4>Ataque: {datum.attack}</h4>
