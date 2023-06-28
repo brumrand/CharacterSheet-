@@ -1,29 +1,28 @@
 import {ProgressWithTitle} from "./progress"
 import {InputWithLabel} from "./progress"
-const variables=[
+
+
+const variables=
     {
         total : 120,
-        actual:100
-    },
-    {
-        total : 120,
-        actual:100
-    },
-]
+        classMax :"headerLabelMax",
+        classCurr :"headerLabelCur",
+        inputMax:"headerInputMax",
+        inputCurr: "headerInputCur",
+        labelMax:"MAX",
+        labelCurr: "CURRENT",
+        
+    }
+
 export const MainHeaderStructure = () =>{
     return (
         <header>
         <section className='externalVariablesHedaerContainers'>
-                <div className="variableDataHeader">
-                    <ProgressWithTitle title="Vitalidad" max ={variables[0].total} actual={variables[0].actual} textClass="headerVartext" progresClass="headerProgress"/>
-                    <InputWithLabel labelClasss={"headerLabelMax"} inputClass={"headerInputMax"} labelText={"MAX"} inputValue={variables[0].total} />
-                    <InputWithLabel labelClasss={"headerLabelCur"} inputClass={"headerInputCur"} labelText={"CURRENT"} inputValue={variables[0].actual} />
-                </div>
-                <div className="variableDataHeader">
-                    <ProgressWithTitle title="Estamina" max ={variables[0].total} actual={variables[0].actual} textClass="headerVartext" progresClass="headerProgress" />
-                    <InputWithLabel labelClasss={"headerLabelMax"} inputClass={"headerInputMax"} labelText={"MAX"} inputValue={variables[0].total} />
-                    <InputWithLabel labelClasss={"headerLabelCur"} inputClass={"headerInputCur"} labelText={"CURRENT"} inputValue={variables[0].actual} />
-                </div>
+ 
+                    <ProgressWithTitle title="Vitalidad" max ={variables.total} actual={variables.total} textClass="headerVartext" progresClass="headerProgress" dataLabels={variables}/>
+
+                    <ProgressWithTitle title="Estamina" max ={variables.total} actual={variables.total} textClass="headerVartext" progresClass="headerProgress" dataLabels={variables} />
+
     
             </section>
             <section className='externalSatitcVariablesHedaerContainers'>
