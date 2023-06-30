@@ -1,3 +1,4 @@
+import {useRef} from "react"
 import {MainHeaderStructure} from "./headerMainCharacterSheet";
 import{ItemSection} from "./itemsSections"
 import{ThrowSection} from "./throws"
@@ -60,6 +61,7 @@ const throws = [
 ]
 
 export const MainStrucutre = () =>{
+    const throwInput = useRef(null)
     return (
         <main>
             <MainHeaderStructure></MainHeaderStructure>
@@ -70,10 +72,12 @@ export const MainStrucutre = () =>{
                 <ItemSection data={items}  ></ItemSection>
             </section>
             <section className="throws">
-            <ThrowSection data={throws}></ThrowSection>
+            <ThrowSection data={throws} throwDataReference={throwInput}></ThrowSection>
             </section>
             <section className="throwsData">
-
+                <div className="itemsRawStats" ></div>
+                <div className="throwRawStats"></div>
+                <div className="throwRawMenue"  ref={throwInput}></div>
             </section>
         </div>
     </section>

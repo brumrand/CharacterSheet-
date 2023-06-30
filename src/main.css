@@ -185,6 +185,8 @@ section .searchBar{
     border: 1px solid whitesmoke;
     position: sticky;
     top: 1vh;
+    display: flex;
+    flex-direction: column;
 }
 .equipment .itemCoantainer{
     width: 100%;
@@ -283,4 +285,24 @@ section .searchBar{
 
 .selectedImg{
     background: #4ec1ac36;
+}
+
+.itemsRawStats{
+    height: 40%;
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    color: whitesmoke;
+
+}
+ .throwRawStats{
+    height: 40%;
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    color: whitesmoke;
+
+}
+.throwRawMenue{
+        height: 20%;
+    width: 100%;
+    color: whitesmoke;
 }
