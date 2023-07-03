@@ -62,6 +62,8 @@ const throws = [
 
 export const MainStrucutre = () =>{
     const throwInput = useRef(null)
+    const itemInput = useRef(null)
+    const modifireInput = useRef(null)
     return (
         <main>
             <MainHeaderStructure></MainHeaderStructure>
@@ -69,14 +71,14 @@ export const MainStrucutre = () =>{
         <SearchBarTag></SearchBarTag>
         <div className="throwsConatiner">
             <section className="equipment">
-                <ItemSection data={items}  ></ItemSection>
+                <ItemSection data={items}  itemRef={itemInput} ></ItemSection>
             </section>
             <section className="throws">
             <ThrowSection data={throws} throwDataReference={throwInput}></ThrowSection>
             </section>
             <section className="throwsData">
-                <div className="itemsRawStats" ></div>
-                <div className="throwRawStats"></div>
+                <div className="itemsRawStats"  attack="0" defensa="0" damg="0" iniciativa="0" ref={itemInput} ></div>
+                <div className="throwRawStats" ref={modifireInput}></div>
                 <div className="throwRawMenue"  ref={throwInput}></div>
             </section>
         </div>

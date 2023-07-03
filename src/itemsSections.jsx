@@ -1,5 +1,7 @@
 import {useState} from "react"
-export const ItemSection = ({data}) =>{
+import {useRef} from "react"
+
+export const ItemSection = ({data, itemRef}) =>{
     const results = [];
 
     for (const datum of data) {
@@ -15,14 +17,51 @@ export const ItemSection = ({data}) =>{
                 route = "/item.svg"
           }
           let  [isclick, setIsClick]  = useState(false);
+          let itemInputRef = useRef(null)
           let  handleClick =() =>{
             setIsClick(!isclick)
+            if(isclick == false){
+              let atck      = parseInt(itemRef.current.getAttribute("attack"));
+             let  def       = parseInt(itemRef.current.getAttribute("defensa"));
+              let init       = parseInt(itemRef.current.getAttribute("iniciativa"));
+             let  damg   = parseInt(itemRef.current.getAttribute("damg"));
+             let name = itemRef.current.getAttribute("items")
+
+             atck      =  atck + datum.attack
+             def       = def +  datum.defense
+             init       = init + datum.iniciative
+             damg   = damg +datum.damage
+
+              itemRef.current.setAttribute("attack",  atck);
+              itemRef.current.setAttribute("defensa", def );
+              itemRef.current.setAttribute("iniciativa", init );
+              itemRef.current.setAttribute("damg",  damg);
+
+              itemRef.current.innerHTML = ("<h1>"+datum.name+"</h1> <div class='attcakThrow'><p> Attack: "+atck+"</p><p>Damage: "+damg+"</p></div><div class='defnsaThrow'><p>Defensa: "+def+"</p><p>Iniciativa: "+init+"</p></div>")
+            }else{
+              let atck      = parseInt(itemRef.current.getAttribute("attack"));
+             let  def       = parseInt(itemRef.current.getAttribute("defensa"));
+              let init       = parseInt(itemRef.current.getAttribute("iniciativa"));
+             let  damg   = parseInt(itemRef.current.getAttribute("damg"));
+             let name = itemRef.current.getAttribute("items")
+
+              atck      =  atck - datum.attack
+              def       = def -  datum.defense
+              init       = init - datum.iniciative
+              damg   = damg -datum.damage
+
+              itemRef.current.setAttribute("attack",  atck);
+              itemRef.current.setAttribute("defensa", def );
+              itemRef.current.setAttribute("iniciativa", init );
+              itemRef.current.setAttribute("damg",  damg);
+              itemRef.current.innerHTML = ("<h1>"+datum.name+"</h1> <div class='attcakThrow'><p> Attack: "+atck+"</p><p>Damage: "+damg+"</p></div><div class='defnsaThrow'><p>Defensa: "+def+"</p><p>Iniciativa: "+init+"</p></div>")
+            }
           }
           let  imageClasess = "itemsImage"
           isclick === false ?  imageClasess = "itemsImage" :  imageClasess = "itemsImage selectedImg"
         results.push(
             
-        <div className="itemCoantainer" onClick={handleClick}>
+        <div className="itemCoantainer" onClick={handleClick}  attack={datum.attack} defensa={datum.defense} damg={datum.damage} iniciativa={datum.iniciative} items={datum.name} ref={itemInputRef}>
             <img src={route} className={imageClasess} />
             <h3>{datum.name}</h3>
             <div className="itemData1">
