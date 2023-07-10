@@ -288,22 +288,81 @@ section .searchBar{
 }
 
 .itemsRawStats{
-    height: 40%;
+    height: 35%;
     width: 100%;
     border-bottom: 1px solid whitesmoke;
     color: whitesmoke;
 
 }
  .throwRawStats{
-    height: 40%;
+    height: 35%;
     width: 100%;
     border-bottom: 1px solid whitesmoke;
     color: whitesmoke;
 
 }
 .throwRawMenue{
-        height: 20%;
+        height: 30%;
     width: 100%;
     color: whitesmoke;
 }
 
+.itemsRawStats{
+    display: grid;
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: 50%  50%;
+    grid-template-rows: 25% 75%;
+}
+
+.itemsRawStats h1{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.itemsRawStats .attcakThrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: large;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+}
+.itemsRawStats .defnsaThrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: large;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+.throwRawMenue h2{
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    text-align: center;
+} 
+.throwRawMenue h1{
+
+    width: 100%;
+    text-align: center;
+} 
+.throwRawMenue p {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+} 

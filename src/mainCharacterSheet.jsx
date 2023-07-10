@@ -37,6 +37,7 @@ const throws = [
     {
         name : "atletismo",
         attr : "constitucion",
+        attrValue : 7,
         haki : true,
         modf : 10,
         cost: 0,
@@ -45,6 +46,7 @@ const throws = [
     {
         name : "bloqueo",
         attr : "destreza",
+        attrValue : 7,
         haki : true,
         modf : 10,
         cost: 0,
@@ -53,10 +55,24 @@ const throws = [
     {
         name : "pelea",
         attr : "fuerza",
+        attrValue : 7,
         haki : true,
         modf : 10,
         cost: 0,
         tecn: false
+    },
+    {
+        name : "Estilo tsunami",
+        attr : "fuerza",
+        attrValue : 7,
+        haki : true,
+        modTitle:"Pelea",
+        modf : 10,
+        cost: 25,
+        data: "hace cosas estilo tsunami",
+        dmg: 12,
+        tecVal: 12,
+        tecn: true
     }
 ]
 

@@ -5,7 +5,33 @@ export const ThrowSection = ({data, throwDataReference}) =>{
         let route = "./dado.svg"
         const clickThrow = ()=>{
             let numeroAleatorio = Math.floor(Math.random() * 20) + 1
-            throwDataReference.current.innerHTML = "<p> dado : "+numeroAleatorio+" habilidad : "+datum.modf+"</p>"
+            if (datum.tecn) {
+                if(datum.haki){
+                    let haki = 0
+                    haki = prompt("Introduzca su nivel de haki")
+                    let suma = numeroAleatorio+ parseInt(datum.attrValue)+ parseInt(datum.modf)+(parseInt(haki) *  2) + parseInt(datum.tecVal)
+                      throwDataReference.current.innerHTML =
+                      "<h2>"+datum.name+"</h2>"+
+                      "<h1>Modificadores</h1>"+
+                       "<p> d20 : "+numeroAleatorio+
+                       " + attr : "+datum.attrValue+
+                       " + hab : "+datum.modf+
+                       " + tec : "+datum.modf+
+                       " + haki : "+haki+
+                       " </p><h1>Total</h1><p>"+suma+" +"+datum.dmg+" dmg"
+                       +"</p>"
+                }else{
+                      throwDataReference.current.innerHTML = "<p> d20 : "+numeroAleatorio+" attr : "+datum.modf+" hab : "+datum.modf+"</p>"
+                }
+              
+            }else{
+                  if(datum.haki){
+                      throwDataReference.current.innerHTML = "<p> d20 : "+numeroAleatorio+" attr : "+datum.modf+" hab : "+datum.modf+"</p>"
+                }else{
+                      throwDataReference.current.innerHTML = "<p> d20 : "+numeroAleatorio+" attr : "+datum.modf+" hab : "+datum.modf+"</p>"
+                }
+            }
+            
         }
         
           

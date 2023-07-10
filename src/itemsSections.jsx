@@ -37,7 +37,7 @@ export const ItemSection = ({data, itemRef}) =>{
               itemRef.current.setAttribute("iniciativa", init );
               itemRef.current.setAttribute("damg",  damg);
 
-              itemRef.current.innerHTML = ("<h1>"+datum.name+"</h1> <div class='attcakThrow'><p> Attack: "+atck+"</p><p>Damage: "+damg+"</p></div><div class='defnsaThrow'><p>Defensa: "+def+"</p><p>Iniciativa: "+init+"</p></div>")
+              itemRef.current.innerHTML = ("<h1>Modificadores objetos</h1>  <div class='attcakThrow'><p> Attack: "+atck+"</p><p>Damage: "+damg+"</p></div><div class='defnsaThrow'><p>Defensa: "+def+"</p><p>Iniciativa: "+init+"</p></div>")
             }else{
               let atck      = parseInt(itemRef.current.getAttribute("attack"));
              let  def       = parseInt(itemRef.current.getAttribute("defensa"));
@@ -54,7 +54,7 @@ export const ItemSection = ({data, itemRef}) =>{
               itemRef.current.setAttribute("defensa", def );
               itemRef.current.setAttribute("iniciativa", init );
               itemRef.current.setAttribute("damg",  damg);
-              itemRef.current.innerHTML = ("<h1>"+datum.name+"</h1> <div class='attcakThrow'><p> Attack: "+atck+"</p><p>Damage: "+damg+"</p></div><div class='defnsaThrow'><p>Defensa: "+def+"</p><p>Iniciativa: "+init+"</p></div>")
+              itemRef.current.innerHTML = ("<h1>Modificadores objetos</h1> <div class='attcakThrow'><p> Attack: "+atck+"</p><p>Damage: "+damg+"</p></div><div class='defnsaThrow'><p>Defensa: "+def+"</p><p>Iniciativa: "+init+"</p></div>")
             }
           }
           let  imageClasess = "itemsImage"
